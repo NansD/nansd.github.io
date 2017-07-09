@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -52,7 +52,8 @@
     <!--Navbar-->
     <nav class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
         <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">
@@ -64,7 +65,7 @@
                         <a class="nav-link"> <i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"> <i class="fa fa-line-chart" aria-hidden="true"></i> Dashboard</a>
+                        <a class="nav-link dashboard-link"> <i class="fa fa-line-chart" aria-hidden="true"></i> Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">Pricing</a>
@@ -77,22 +78,23 @@
         </div>
     </nav>
     <!--/.Navbar-->
-	    
-	    
 
-   
+
+
+
 
     <!--Mask-->
     <div class="view hm-black-strong">
         <div class="full-bg-img flex-center">
             <ul class="animated fadeInUp">
                 <li>
-                    <h1 class="h1-responsive">Welcome to my personal website !</h1></li>
+                    <h1 class="h1-responsive">Welcome to my personal website !</h1>
+                </li>
                 <li>
                     <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> It is still under construction</p>
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-lg scroll">Click me</a>
+                    <a class="btn btn-primary btn-lg dashboard-link"><i class="fa fa-line-chart" aria-hidden="true"></i> Discover me through a dashboard !</a>
                 </li>
             </ul>
         </div>
@@ -103,58 +105,59 @@
 
         <!--Footer Links-->
         <div class="container-fluid">
-            <div class="row">
-
-                <!--First column-->
-                <div class="col-md-3 offset-lg-1 hidden-lg-down">
-                    <h5 class="title" id="about">About the framework used</h5>
-                    <p>Material Design (codenamed Quantum Paper) is a design language developed by Google. </p>
-
-                    <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS, and JS framework - Bootstrap.</p>
-                </div>
-                <!--/.First column-->
-
+            <div class="row justify-content-center">
                 <hr class="hidden-md-up">
 
-                <!--Second column-->
-                <div class="col-lg-2 col-md-4 offset-lg-1">
-                    <h5 class="title">First column</h5>
-                    <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
+                <div class="col-6">
+                    <!--Naked Form-->
+                    <div class="card-block contact-form">
+
+                        <!--Header-->
+                        <div class="text-center">
+                            <h3><i class="fa fa-envelope"></i> Contact me :</h3>
+                            <hr class="mt-2 mb-2">
+                        </div>
+
+                        <!--Body-->
+                        <p>When clicking "send mail", you will be redirected to your mailing client !</p>
+                        <br>
+
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fa fa-tag prefix"></i>
+                            <input type="text" id="form32" class="form-control">
+                            <label for="form34">Subject</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix"></i>
+                            <textarea type="text" id="form7" class="md-textarea"></textarea>
+                            <label for="form2">Content</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-default send-mail">Send e-mail <i class="fa fa-paper-plane send-shadow" aria-hidden="true"></i></button>
+
+                            <div class="call">
+                                <br>
+                                <p> <h3>Contact information</h3>
+                                    <div class="contact-info">
+                                    <br>
+                                    <span><i class="fa fa-fw fa-address-card-o" aria-hidden="true"></i></span> Nans DUMORTIER
+                                    <br>
+                                    <span><i class="fa fa-fw fa-at" aria-hidden="true"></i></span> <a href="mailto:dumortier.nans@gmail.com">dumortier.nans@gmail.com</a>
+                                    <br>
+                                    <span><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i></i></span> <a href="https://tinyurl.com/ydgp5ke2"> LinkedIn</a>
+                                    <br>
+                                    <span><i class="fa fa-fw fa-phone"> </i></span> + 33 7 50 80 56 56
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Naked Form-->
                 </div>
-                <!--/.Second column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Third column-->
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Second column</h5>
-                    <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <!--/.Third column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Fourth column-->
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Third column</h5>
-                    <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
 
             </div>
         </div>
@@ -187,7 +190,7 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-        
+
     <!-- custom JavaScript -->
     <script type="text/javascript" src="js/script.js"></script>
 
