@@ -38,10 +38,10 @@
 }
 
 .contact-form textarea{
-  color: #FFF;
+  color: #FFFFFF;
 }
 .contact-form input[type=text]{
-  color: #FFF;
+  color: #FFFFFF;
 }
 .send-shadow{
   text-shadow: 2px 3px 1px rgba(0,0,0,0.3);
@@ -50,4 +50,17 @@
     width: 227px;
     margin: 0 auto;
     text-align: left;
+}
+
+#dashboard{
+  background-color: #FFFFFF;
+}
+
+#dashboard h1 {
+  color: #000000
+}
+
+#dashboard #myChart{
+  width: 500px !important;
+  height: 500px !important;
 }
